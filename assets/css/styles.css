@@ -167,9 +167,9 @@ body.dark-theme {
 
 .profile__perfil {
     background: linear-gradient(
-        180deg,
-        hsla(var(--hue), var(--sat), var(--lig), 1) 0%,
-        hsla(var(--hue), var(--sat), var(--lig), 0.2) 100%
+            180deg,
+            hsla(var(--hue), var(--sat), var(--lig), 1) 0%,
+            hsla(var(--hue), var(--sat), var(--lig), 0.2) 100%
     );
     border-radius: 50%;
     overflow: hidden;
