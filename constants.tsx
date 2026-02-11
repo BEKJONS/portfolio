@@ -60,6 +60,14 @@ export const PROJECTS: Project[] = [
     image: '/assets/img/manageapp_uz.png',
     tech: ['Go', 'PostgreSQL', 'Social Media', 'Task Management'],
     link: 'https://manageapp.uz',
+  },
+  {
+    id: '6',
+    title: 'Pharma Cosmos',
+    description: 'A comprehensive pharmacy management system with 1C integration, inventory tracking, and custom payment integrations (Click, Payme, Alif).',
+    image: '/assets/img/pharma.png',
+    tech: ['Go', 'Gin', 'PostgreSQL', 'Redis', 'Payment Systems'],
+    link: 'https://tpharma.noor.uz/',
   }
 ];
 
