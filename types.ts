@@ -18,6 +18,16 @@ export interface Project {
   github?: string;
 }
 
+export interface Experience {
+  id: string;
+  role: string;
+  company: string;
+  period: string;
+  summary: string;
+  highlights: string[];
+  tech: string[];
+}
+
 export interface Stat {
   label: string;
   value: string;

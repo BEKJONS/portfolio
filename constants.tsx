@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Skill, Project, Stat } from './types';
+import { Skill, Project, Stat, Experience } from './types';
 
 export const SKILLS: Skill[] = [
   { name: 'Go (Golang)', level: 'Advanced', category: 'Backend' },
@@ -19,21 +19,77 @@ export const SKILLS: Skill[] = [
   { name: 'Python', level: 'Basic', category: 'Backend' },
 ];
 
+export const EXPERIENCE: Experience[] = [
+  {
+    id: 'itlegacy',
+    role: 'Product Co-founder & Team Lead',
+    company: 'ItLegacy · AI SaaS for U.S. truck repair shops',
+    period: 'Oct 2025 – Present',
+    summary: 'Service orders, parts & POS, invoicing, finance, and CRM for heavy-duty repair shops, live in production with U.S. customers. I co-founded the product, built its backend from the first commit and lead a team of 4 (backend, frontend, QA).',
+    highlights: [
+      'Team lead: review and merge all PRs, plan and assign work, hired and onboarded engineers, work directly with U.S. shop owners, and make the final technical calls.',
+      'Shift to AI SaaS: an in-app LLM assistant (Go + React/TypeScript) on the OpenAI Responses API with 51 strict-schema tools and SSE streaming. It turns invoice photos into draft purchase orders, decodes VINs, and suggests reorders.',
+      'Guardrails for AI actions: per-call permission and tenant checks, writes only through user-confirmed cards, an output filter for prompt leaks, and a per-company monthly cost cap.',
+      'Multi-tenant backend with 1,000+ API routes over 130+ domain models: tenant isolation, Casbin RBAC, JWT sessions in Redis, rate limiting, encrypted integration tokens.',
+      'CRM and communications: pipelines and deals, a unified inbox across Telegram and SMS, RingCentral calls with Whisper transcription, Gmail API estimate and invoice emails, and Telegram bots.',
+      'Real-time and delivery: authenticated WebSocket hub, Redis dashboard cache, CI/CD for backend and frontend (GitHub Actions, Docker, GHCR), and the AWS and DigitalOcean servers.',
+    ],
+    tech: ['Go', 'Fiber', 'MongoDB', 'Redis', 'OpenAI API', 'WebSockets', 'Docker'],
+  },
+  {
+    id: 'noor',
+    role: 'Backend Engineer',
+    company: 'Noor · PharmaCosmos',
+    period: 'Jun 2025 – Oct 2025',
+    summary: 'Pharmacy-chain management system: inventory, sales, 1C sync, and payments.',
+    highlights: [
+      'Built most of the 1C integration and implemented Alif payments end to end, alongside existing Click and Payme flows.',
+      'Refactored core modules, tuned slow SQL queries, and added Redis caching to heavily used endpoints.',
+    ],
+    tech: ['Go', 'Gin', 'PostgreSQL', 'Redis'],
+  },
+  {
+    id: 'udevs',
+    role: 'Backend Engineer',
+    company: 'Udevs · Bonvi ERP (MBF)',
+    period: 'Dec 2024 – Jun 2025',
+    summary: 'Mobile ERP app integrated with SAP Business One.',
+    highlights: [
+      "Started as a trainee doing full engineering work; hired in May 2025 and took over the departing project lead's work.",
+      'Built Go APIs (gRPC, REST) between the mobile app and SAP Business One, plus background services on Redis and RabbitMQ.',
+      'Evaluated CockroachDB as a distributed SQL option and presented the findings to the backend team.',
+    ],
+    tech: ['Go', 'gRPC', 'SAP Business One', 'Redis', 'RabbitMQ'],
+  },
+  {
+    id: 'smartadmin',
+    role: 'Co-founder & Backend Engineer',
+    company: 'SmartAdmin.uz & ManageApp.uz (part-time startup)',
+    period: 'Oct 2024 – Apr 2025',
+    summary: 'Two products built with a partner.',
+    highlights: [
+      "SmartAdmin's backend: a multi-company, multi-branch CRM for small businesses (inventory, sales, purchasing, cash flow, and debt).",
+      "ManageApp's backend: social media post scheduling and Jira-style team task management.",
+    ],
+    tech: ['Go', 'Gin', 'PostgreSQL', 'Redis', 'Docker'],
+  },
+];
+
 export const PROJECTS: Project[] = [
   {
     id: '1',
     title: 'Listn Music Platform',
-    description: 'A modern music streaming platform built with Go, featuring real-time playback, playlist management, and social music sharing capabilities.',
+    description: 'A minimal personal link for sharing your favorite tracks from Spotify, Yandex Music, Apple Music, and SoundCloud in one place.',
     image: '/assets/img/listn.png',
-    tech: ['Go', 'PostgreSQL', 'REST API', 'Music Streaming'],
-    link: 'https://listn.gophers.uz',
+    tech: ['Go', 'PostgreSQL', 'React', 'TypeScript'],
+    link: 'https://new-listn.lovable.app',
   },
   {
     id: '2',
     title: 'Monitoring Alert System',
-    description: 'High-concurrency monitoring service built with Go and gRPC, handling over 10k heartbeats per second with real-time alerting via Telegram.',
+    description: 'Lightweight server monitor in Go: samples CPU, memory and disk I/O on a configurable interval and sends Telegram alerts when a threshold is crossed.',
     image: '/assets/img/monitoring_alert_system.png',
-    tech: ['Go', 'gRPC', 'PostgreSQL', 'Telegram API'],
+    tech: ['Go', 'gopsutil', 'Telegram API', 'YAML'],
     link: 'https://github.com/BEKJONS/MonitoringAlertSystem',
     github: 'https://github.com/BEKJONS/MonitoringAlertSystem',
   },
@@ -63,8 +119,8 @@ export const PROJECTS: Project[] = [
   },
   {
     id: '6',
-    title: 'Pharma Cosmos',
-    description: 'A comprehensive pharmacy management system with 1C integration, inventory tracking, and custom payment integrations (Click, Payme, Alif).',
+    title: 'PharmaCosmos',
+    description: 'Pharmacy-chain management system at Noor: inventory, sales, 1C sync, and payments (Click, Payme, Alif). I built the Alif integration and most of the 1C sync.',
     image: '/assets/img/pharma.png',
     tech: ['Go', 'Gin', 'PostgreSQL', 'Redis', 'Payment Systems'],
     link: 'https://tpharma.noor.uz/',

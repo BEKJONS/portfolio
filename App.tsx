@@ -2,6 +2,7 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import Experience from './components/Experience';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
@@ -11,6 +12,7 @@ const App: React.FC = () => {
     <main className="min-h-screen selection:bg-blue-500/30">
       <Navbar />
       <Hero />
+      <Experience />
       <Skills />
       <Projects />
       
@@ -25,7 +27,7 @@ const App: React.FC = () => {
           </blockquote>
           <div className="flex flex-col items-center">
             <span className="font-bold text-lg text-white">Ozodjon A'zamjonov</span>
-            <span className="text-gray-500 uppercase tracking-widest text-xs font-semibold">Backend Architect</span>
+            <span className="text-gray-500 uppercase tracking-widest text-xs font-semibold">Co-founder &amp; Team Lead</span>
           </div>
         </div>
       </section>

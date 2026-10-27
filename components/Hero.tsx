@@ -21,21 +21,21 @@ const Hero: React.FC = () => {
         <div className="relative mb-6">
           <img
             src="/assets/img/mee.jpg"
-            alt="Ozodjon A'zamjonov"
+            alt="Ozodjon (Jons) A'zamjonov"
             className="w-32 h-32 rounded-3xl mx-auto border-2 border-gray-800 object-cover shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-500"
           />
         </div>
 
         <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6 bg-gradient-to-b from-white to-gray-400 bg-clip-text text-transparent">
-          Ozodjon A'zamjonov
+          Ozodjon (Jons) A'zamjonov
         </h1>
 
         <p className="text-lg md:text-xl text-gray-400 mb-10 max-w-2xl mx-auto leading-relaxed">
-          More than 2 years of experience in the IT industry, building high-performance <span className="text-white font-medium">distributed systems</span> and <span className="text-white font-medium">robust backends</span> using Go. Specialized in <span className="text-white font-medium">system design</span> and architecture, with implementations across multiple production projects.
+          <span className="text-white font-medium">Co-founder and team lead</span> of an AI-powered SaaS for U.S. truck repair shops. I've spent 2+ years building <span className="text-white font-medium">multi-tenant backends</span> in Go and now build the <span className="text-white font-medium">AI layer</span> on top.
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-4 mb-16">
-          <a href="/assets/pdf/resume.pdf" download className="px-8 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-semibold transition-all shadow-lg shadow-blue-600/20 flex items-center gap-2">
+          <a href="/cv/Ozodjon_Azamjonov_Resume.pdf" download className="px-8 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-semibold transition-all shadow-lg shadow-blue-600/20 flex items-center gap-2">
             Download CV
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
           </a>

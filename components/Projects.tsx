@@ -14,9 +14,14 @@ const Projects: React.FC = () => {
               A selection of systems I've architected and implemented, focusing on scalability and developer experience.
             </p>
           </div>
-          <button className="px-6 py-2 rounded-lg bg-gray-900 border border-gray-800 text-sm font-medium hover:bg-gray-800 transition-colors">
-            View Archive
-          </button>
+          <a
+            href="https://github.com/BEKJONS?tab=repositories"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-6 py-2 rounded-lg bg-gray-900 border border-gray-800 text-sm font-medium text-center hover:bg-gray-800 transition-colors"
+          >
+            All repositories
+          </a>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
