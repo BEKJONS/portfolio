@@ -22,7 +22,7 @@ export const SKILLS: Skill[] = [
 export const EXPERIENCE: Experience[] = [
   {
     id: 'itlegacy',
-    role: 'Product Co-founder & Team Lead',
+    role: 'Product Co-founder & Team Lead (Founding Backend Engineer)',
     company: 'ItLegacy · AI SaaS for U.S. truck repair shops',
     period: 'Oct 2025 – Present',
     summary: 'Service orders, parts & POS, invoicing, finance, and CRM for heavy-duty repair shops, live in production with U.S. customers. I co-founded the product, built its backend from the first commit and lead a team of 4 (backend, frontend, QA).',
